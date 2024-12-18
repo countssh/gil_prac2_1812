@@ -16,12 +16,12 @@ public class SumController {
     @FXML
     void sumButtonOnAction(ActionEvent event) {
         int God = Integer.parseInt(god.getText().toString());
-        int stoletie;
+        int stol;
         if (God % 100 == 0) {
-            stoletie = God / 100;
+            stol = God / 100;
         } else {
-            stoletie = God / 100 + 1;
+            stol = God / 100 + 1;
         }
-        resultLabel.setText("Номер столетия: " + stoletie);
+        resultLabel.setText("Номер столетия: " + stol);
     }
 }
