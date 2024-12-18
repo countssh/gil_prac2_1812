@@ -20,6 +20,9 @@ public class SumController {
             int start = 3;
             int d = (start + (K - 1)) % 7;
 
+            if (d == 0) {
+                d = 7;
+            }
             resultLabel.setText("Номер дня недели: " + d);
 
         } else {
